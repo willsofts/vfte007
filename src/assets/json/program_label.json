@@ -1,0 +1,44 @@
+[
+	{
+		"language": "TH",
+		"label": [
+			{"name": "caption_title", "value": "สิทธิการใช้งาน"},
+			{"name": "usernames_label", "value": "ผู้ใช้"},
+			{"name": "usertnames_label", "value": "ชื่อ (ภาษาไทย)"},
+			{"name": "usertsurnames_label", "value": "นามสกุล (ภาษาไทย)"},
+			{"name": "username_headerlabel", "value": "ผู้ใช้"},
+			{"name": "usertname_headerlabel", "value": "ชื่อ (ภาษาไทย)"},
+			{"name": "usertsurname_headerlabel", "value": "นามสกุล (ภาษาไทย)"},
+			{"name": "email_headerlabel", "value": "อีเมล"},
+			{"name": "username_label", "value": "ผู้ใช้"},
+			{"name": "email_label", "value": "อีเมล"},
+			{"name": "status_label", "value": "สถานะ"},
+			{"name": "branchflag_label", "value": "สาขา"},
+			{"name": "accessalls_sectionlabel", "value": "การเข้าถึง"},
+			{"name": "accessroles_sectionlabel", "value": "บทบาทผู้ใช้งาน"},
+			{"name": "accessgroups_sectionlabel", "value": "สิทธิผู้ใช้งาน"},
+			{"name": "reset_factor_button", "value": "ล้างการยืนยันสองชั้น"}
+		]
+	},
+	{
+		"language": "EN",
+		"label": [
+			{"name": "caption_title", "value": "User Privilege"},
+			{"name": "usernames_label", "value": "User"},
+			{"name": "usertnames_label", "value": "First Name (Thai)"},
+			{"name": "usertsurnames_label", "value": "Last Name (Thai)"},
+			{"name": "username_headerlabel", "value": "User"},
+			{"name": "usertname_headerlabel", "value": "First Name (Thai)"},
+			{"name": "usertsurname_headerlabel", "value": "Last Name (Thai)"},
+			{"name": "email_headerlabel", "value": "Email"},
+			{"name": "username_label", "value": "User"},
+			{"name": "email_label", "value": "Email"},
+			{"name": "status_label", "value": "Status"},
+			{"name": "branchflag_label", "value": "Access Branch"},
+			{"name": "accessalls_sectionlabel", "value": "Accessing"},
+			{"name": "accessroles_sectionlabel", "value": "Roles"},
+			{"name": "accessgroups_sectionlabel", "value": "Privileges"},
+			{"name": "reset_factor_button", "value": "Reset 2FA"}
+		]
+	}
+]
