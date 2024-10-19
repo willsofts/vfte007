@@ -268,8 +268,9 @@ export default {
         else $("#"+input).trigger("focus"); //if using id
       }
     },
-    showDialog() {
+    showDialog(callback) {
       //$("#modaldialog_layer").modal("show");
+      if(callback) $(this.$refs.dialogForm.$el).on("shown.bs.modal",callback);
       $(this.$refs.dialogForm.$el).modal("show");
     },  
     hideDialog() {
@@ -338,7 +339,7 @@ export default {
             this.reset(data.body.dataset);
             this.v$.$reset();
             this.disabledKeyField = true;
-            this.showDialog();
+            this.showDialog(() => { this.$refs.username.focus(); });
           }
         }
       });	
