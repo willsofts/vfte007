@@ -121,7 +121,7 @@
         <button ref="resetfactorbutton" id="resetfactorbutton" class="btn btn-dark btn-sm" @click="resetFactorClick" v-if="showFactor"><em class="fa fa-undo fa-btn-icon"></em>{{ labels.reset_factor_button }}</button>
 			</div>
       <button ref="updatebutton" id="updatebutton" class="btn btn-dark btn-sm" @click="updateClick"><em class="fa fa-save fa-btn-icon"></em>{{ labels.update_button }}</button>
-      <button class="btn btn-dark btn-sm" data-dismiss="modal"><em class="fa fa-close fa-btn-icon"></em>{{ labels.cancel_button }}</button>
+      <button id="canceldialogbutton" class="btn btn-dark btn-sm" data-dismiss="modal"><em class="fa fa-close fa-btn-icon"></em>{{ labels.cancel_button }}</button>
     </template>
   </DialogForm>
 </template>
