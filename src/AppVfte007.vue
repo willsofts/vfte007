@@ -43,11 +43,19 @@ export default {
     this.$nextTick(async () => {
       //ensure ui completed then invoke startApplication 
       startApplication("vfte007",(data) => {
-        this.multiLanguages = getMultiLanguagesModel();
-        this.messagingHandler(data);
-        this.loadDataCategories(!this.alreadyLoading,() => {
-          this.$refs.pageHeader.changeLanguage(getDefaultLanguage());
-        });
+        console.log("vueapp: message",data);
+        if(data.type=="language") {
+          let lang = data.language;
+          if(lang) {
+            this.changeLanguage(lang);
+          }
+        } else {
+          this.multiLanguages = getMultiLanguagesModel();
+          this.messagingHandler(data);
+          this.loadDataCategories(!this.alreadyLoading,() => {
+            this.$refs.pageHeader.changeLanguage(getDefaultLanguage());
+          });
+        }
       });
     });
   },
