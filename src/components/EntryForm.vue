@@ -47,7 +47,7 @@
               <div class="row row-height">
                 <div class="col-height col-md-8">
                   <div class="checkbox form-check">
-                    <input ref="branchflag" type="checkbox" true-value="1" false-value="0" id="branchflag" v-model="localData.branchflag" class="form-control input-md form-check-input" />
+                    <input ref="branchflag" type="checkbox" true-value="1" false-value="0" id="branchflag" v-model="localData.branchflag" class="form-control input-md form-check-input" @change="branchChanged"/>
                     <label for="branchflag" class="control-label form-check-label">{{ labels.branchflag_label }}</label>
                   </div>
                 </div>
@@ -382,6 +382,20 @@ export default {
         }
       });	
     },
+    branchChanged(event) {
+      if(event.target.checked) {
+        let branches = [];
+        let tcategory = this.$props.dataCategory["tcompbranch"];
+        if(tcategory) {
+          for(let it of tcategory) {
+            branches.push(it.id);
+          }
+        }
+        this.localData.userbranches = branches;
+      } else {
+        this.localData.userbranches = [];
+      }
+    }
   }
 };
 </script>
