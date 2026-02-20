@@ -57,7 +57,7 @@
         </div>
         <div class="row row-height">
           <div id="accessbranches" class="col-md-12 col-height">
-            <fieldset id="accessbranchesfieldset" :disabled="!isAccessBranch">
+            <fieldset id="accessbranchesfieldset">
               <div id="accessbrancheslayer" class="table-layer-class">
                 <div v-for="(branch, index) in branchLists()" :key="index" class="row row-heighter">
                   <div v-for="item in branch" :key="item.id" class="col-height col-md-4">
